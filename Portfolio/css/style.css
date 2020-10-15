@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+html, body, p{
+	margin:0;
+	padding:0;
+}
+header{
+	background-color:#d4b562; /*Couleur de fond*/
+	text-align:center;/*texte centré*/
+}
+.centercolumn, .paragraphe{
+width:930px;/*Taille de la colonne centrée moins le padding*/
+	background-color:#d4b562;/*Couleur de fond*/
+	margin: auto; /*centrer la colonne*/
+	padding:25px;/*margin interne*/
+}
+h1,h2,h3{
+	text-align: center;
+}
+footer{
+	padding:20px 0px;/*Marge verticale*/
+	background-color:#d4b562; /*Couleur de fond*/
+	text-align:center;/*texte centré*/
+}
+body {
+  font-family: 'Calistoga', cursive;
+  background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
+  color: black;
+}
