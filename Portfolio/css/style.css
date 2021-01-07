@@ -1,3 +1,4 @@
+/*----------------------------------------------------CSS Classique------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 html, body, p{
 	margin:0;
@@ -7,36 +8,33 @@ header{
 	background-color:#d4b562; /*Couleur de fond*/
 	text-align:center;/*texte centré*/
 }
-
-.nav, .menu{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+body{
+	font-family: 'Calistoga', cursive;
+  background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
+  color: black;
 }
+/*----------------------------FLEX------------------------------------*/
 
 .menu{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-  text-align: center;
-}
-
-.menu { 
+  	text-align: center;
         list-style: none; 
         padding: 0; 
         margin: 0;  
-      }
+}
 .experiencespro { 
         background-color: #d4b562;
-      }
+}
 
 .experiencesperso { 
         background-color: #d4b562;
-      }
+}
 
 .formations { 
         background-color: #d4b562;
-      }
+}
 .apropos {
 		background-color: #d4b562;
 }
@@ -49,46 +47,63 @@ header{
 		background-color: #d4b562;
 }
 
-.lien {
-		background-color: #d4b562;
-		padding:1em
-		justify-content:center;
-}
-
 a { 
         color: black; 
         font-size: 1em;
         text-decoration: none; 
-      }
+}
 
 .menu{
         display:flex;
         align-items:center;
         justify-content : center;
         height:6em;
-      }
+}
 
 .menu, .experiencespro, .experiencesperso, .formations, .apropos, .cv, .contact{
         flex:1;
         height: 3em;
-      }
+}
 
-.centercolumn, .paragraphe{
-width:930px;/*Taille de la colonne centrée moins le padding*/
-	background-color:#d4b562;/*Couleur de fond*/
-	margin: auto; /*centrer la colonne*/
-	padding:25px;/*margin interne*/
+/*------------------------------------------GRID INDEX-------------------------------------*/
+.wrapper1{
+		  display: grid;
+		  grid-template-columns: 1fr 2fr 1fr;
+		  grid-template-rows: repeat (5,1fr);
+		  grid-gap: 1em
+		  background-color: #d4b562;
 }
-h1,h2,h3{
-	text-align: center;
+
+.box{
+		  background-color: #d4b562;
+		  border-radius: 5px;
+		  padding: 20px;
+		  text-align: center;
 }
-footer{
-	padding:20px 0px;/*Marge verticale*/
-	background-color:#d4b562; /*Couleur de fond*/
-	text-align:center;/*texte centré*/
+
+.content1{
+	    	grid-column: 2,3;
+	        grid-row: 1,2;
 }
-body {
-  font-family: 'Calistoga', cursive;
-  background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
-  color: black;
+
+.content2{
+	    	grid-column: 2,3;
+	        grid-row: 2,3;
 }
+
+.content3{
+	    	grid-column: 2,3;
+	        grid-row: 3,4;
+}
+
+.content4{
+	    	grid-column: 2,3;
+	        grid-row: 4,5;
+}
+
+.lien {
+	grid-column: 2,3;
+	grid-row:5,6;
+}
+
+
