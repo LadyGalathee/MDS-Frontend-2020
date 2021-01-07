@@ -8,11 +8,54 @@ header{
 	text-align:center;/*texte centré*/
 }
 
-.nav, .menu{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  text-align: center;
 }
+
+.menu { 
+        list-style: none; 
+        padding: 0; 
+        margin: 0;
+      }
+
+.experiencespro { 
+        background-color: #1abc9c;
+      }
+ .experiencesperso { 
+        background-color: #3498db;
+      }
+ .formations { 
+        background-color: #9b59b6;
+        }
+
+ .apropos {
+	    background-color: #9b59b6;
+
+      }
+ .cv {
+ 		background-color: #9b59b6;
+
+ }
+a { 
+        color: black; 
+        font-size: 1em;
+        text-decoration: none; 
+      }
+
+.menu{
+        display:flex;
+        align-items:center;
+        justify-content : center;
+        height:6em;
+      }
+
+.menu, .experiencespro, .experiencesperso, .formations{
+        flex:1;
+        height: 3em;
+      }
 
 .centercolumn, .paragraphe{
 width:930px;/*Taille de la colonne centrée moins le padding*/
