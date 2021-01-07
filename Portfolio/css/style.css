@@ -7,6 +7,13 @@ header{
 	background-color:#d4b562; /*Couleur de fond*/
 	text-align:center;/*texte centré*/
 }
+
+.nav, .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .centercolumn, .paragraphe{
 width:930px;/*Taille de la colonne centrée moins le padding*/
 	background-color:#d4b562;/*Couleur de fond*/
