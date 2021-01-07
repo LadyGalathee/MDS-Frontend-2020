@@ -4,7 +4,7 @@ html, body, p{
 	margin:0;
 	padding:0;
 }
-header{
+header, footer{
 	background-color:#d4b562; /*Couleur de fond*/
 	text-align:center;/*texte centré*/
 }
