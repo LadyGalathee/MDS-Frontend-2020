@@ -1,109 +1,100 @@
-/*----------------------------------------------------CSS Classique------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-html, body, p{
-	margin:0;
-	padding:0;
-}
-header, footer{
-	background-color:#d4b562; /*Couleur de fond*/
-	text-align:center;/*texte centré*/
-}
-body{
-	font-family: 'Calistoga', cursive;
-  background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
-  color: black;
-}
-/*----------------------------FLEX------------------------------------*/
+	/*----------------------------------------------------CSS Classique------------------------------------------------*/
+	@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+	html, body, p{
+		margin:0;
+		padding:0;
+	}
 
-.menu{
-	display: flex;
-	flex-direction: row;
+	header, footer{
+		background-color:#d4b562; /*Couleur de fond*/
+		text-align:center;/*texte centré*/
+	}
+
+	body{
+		font-family: 'Calistoga', cursive;
+	  background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
+	  color: black;
+	}
+
+	main{
+		margin : 50px;
+	}
+
+	.centercolumn, .lien{
+	width:930px;/*Taille de la colonne centrée moins le padding*/
+	background-color:#d4b562;/*Couleur de fond*/
+	margin: auto; /*centrer la colonne*/
+	padding:25px;/*marge interne*/
 	justify-content: center;
-  	text-align: center;
-        list-style: none; 
-        padding: 0; 
-        margin: 0;  
-}
-.experiencespro { 
-        background-color: #d4b562;
 }
 
-.experiencesperso { 
-        background-color: #d4b562;
+h1,h2,h3, .lien{
+	text-align: center;
 }
 
-.formations { 
-        background-color: #d4b562;
-}
-.apropos {
-		background-color: #d4b562;
+footer{
+	padding:20px 20px;/*Marge verticale*/
 }
 
-.cv {
-		background-color: #d4b562;
-}
+	/*----------------------------FLEX------------------------------------*/
 
-.contact{
-		background-color: #d4b562;
-}
+	.menu{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	  	text-align: center;
+	        list-style: none; 
+	        padding: 0; 
+	        margin: 0;  
+	}
+	.experiencespro { 
+	        background-color: #d4b562;
+	}
 
-a { 
-        color: black; 
-        font-size: 1em;
-        text-decoration: none; 
-}
+	.experiencesperso { 
+	        background-color: #d4b562;
+	}
 
-.menu{
-        display:flex;
-        align-items:center;
-        justify-content : center;
-        height:6em;
-}
+	.formations { 
+	        background-color: #d4b562;
+	}
+	.apropos {
+			background-color: #d4b562;
+	}
 
-.menu, .experiencespro, .experiencesperso, .formations, .apropos, .cv, .contact{
-        flex:1;
-        height: 3em;
-}
+	.cv {
+			background-color: #d4b562;
+	}
 
-/*------------------------------------------GRID INDEX-------------------------------------*/
-.wrapper1{
-		  display: grid;
-		  grid-template-columns: 1fr 2fr 1fr;
-		  grid-template-rows: repeat (5,1fr);
-		  grid-gap: 1em
-		  background-color: #d4b562;
-}
+	.contact{
+			background-color: #d4b562;
+	}
 
-.box{
-		  background-color: #d4b562;
-		  border-radius: 5px;
-		  padding: 20px;
-		  text-align: center;
-}
+	a { 
+	        color: black; 
+	        font-size: 1em;
+	        text-decoration: none; 
+	}
 
-.content1{
-	    	grid-column: 2,3;
-	        grid-row: 1,2;
-}
+	.menu{
+	        display:flex;
+	        align-items:center;
+	        justify-content : center;
+	        height:6em;
+	}
 
-.content2{
-	    	grid-column: 2,3;
-	        grid-row: 2,3;
-}
+	.menu, .experiencespro, .experiencesperso, .formations, .apropos, .cv, .contact{
+	        flex:1;
+	        height: 3em;
+	}
 
-.content3{
-	    	grid-column: 2,3;
-	        grid-row: 3,4;
-}
-
-.content4{
-	    	grid-column: 2,3;
-	        grid-row: 4,5;
-}
-
-.lien {
-	grid-column: 2,3;
-	grid-row:5,6;
-}
+	/*------------------------------------------GRID CV-------------------------------------*/
+	.wrapper2{
+			  display: grid;
+			  grid-template-columns: 1fr 2fr 1fr;
+			  grid-template-rows: repeat (6,1fr);
+			  grid-gap: 1em
+			  background-color: #d4b562;
+	}
 
 
