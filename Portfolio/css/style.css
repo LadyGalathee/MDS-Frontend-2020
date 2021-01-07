@@ -27,26 +27,32 @@ header{
         margin: 0;  
       }
 .experiencespro { 
-        background-color: #1abc9c;
+        background-color: #d4b562;
       }
 
 .experiencesperso { 
-        background-color: #3498db;
+        background-color: #d4b562;
       }
 
 .formations { 
-        background-color: #9b59b6;
+        background-color: #d4b562;
       }
 .apropos {
-		background-color: #9b59b6;
+		background-color: #d4b562;
 }
 
 .cv {
-		background-color: #9b59b6;
+		background-color: #d4b562;
 }
 
 .contact{
-		background-color: #9b59b6;
+		background-color: #d4b562;
+}
+
+.lien {
+		background-color: #d4b562;
+		padding:1em
+		justify-content:center;
 }
 
 a { 
@@ -62,7 +68,7 @@ a {
         height:6em;
       }
 
-.menu, .experiencespro, .experiencesperso, .formations{
+.menu, .experiencespro, .experiencesperso, .formations, .apropos, .cv, .contact{
         flex:1;
         height: 3em;
       }
