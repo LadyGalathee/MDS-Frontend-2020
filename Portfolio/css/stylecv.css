@@ -90,11 +90,13 @@
 		grid-column: 1/2;
 		grid-row: 1/4;
 		background-color: #d4b562;
+		border-radius: 5px
 	}
 	.boxcontent4 {
  			grid-column: 2/3;
 	        grid-row:: 1/2;
 			background-color: #d4b562;
+			border-radius: 5px
 
 	}
 	.boxcontent4{
@@ -104,6 +106,7 @@
  			grid-column: 2/3;
 	        grid-row:: 2/3;
 			background-color: #d4b562;
+			border-radius: 5px
 
 	}
 	.boxcontent5{
@@ -113,6 +116,7 @@
  			grid-column: 2/3;
 	        grid-row:: 3/4;
 			background-color: #d4b562;
+			border-radius: 5px
 
 	}
 	.boxcontent6{
