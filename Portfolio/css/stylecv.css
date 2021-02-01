@@ -126,9 +126,6 @@
 
 /* ------------------ A PROPOS -----------*/
 
-.aboutme{
+#aboutme, .name, .domain, .skills, .hobbies{
 	text-align: center;
-	}
-ul{
-	justify-content: center;
 	}
