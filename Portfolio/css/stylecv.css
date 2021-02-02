@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-	html, body, p{
-		margin:0;
-		padding:0;
 
-	}
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
 
-	header, footer{
+h3 {
+	padding: 1rem;
+}
+
+p {
+	padding: 0.5rem;
+}
+
+header, footer{
 		background-color:#d4b562; /*Couleur de fond*/
 		text-align:center;/*texte centré*/
 	}
@@ -21,43 +30,22 @@
 }
 
 	main{
-		margin : 50px;
+		margin : 50px 0px;
+		text-align: center;
 	}
 
 	footer{
-	padding:20px 20px;/*Marge verticale*/
+	padding:20px;/*Marge verticale*/
 }
 	/*----------------------------FLEX------------------------------------*/
 
 	.menu{
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
 	  	text-align: center;
 	        list-style: none; 
 	        padding: 0; 
-	        margin: 0;  
-	}
-	.experiencespro { 
-	        background-color: #d4b562;
-	}
-
-	.experiencesperso { 
-	        background-color: #d4b562;
-	}
-
-	.formations { 
-	        background-color: #d4b562;
-	}
-	.apropos {
-			background-color: #d4b562;
-	}
-
-	.cv {
-			background-color: #d4b562;
-	}
-
-	.contact{
+			margin: 0;
 			background-color: #d4b562;
 	}
 
@@ -74,7 +62,7 @@
 	        height:6em;
 	}
 
-	.menu, .experiencespro, .experiencesperso, .formations, .apropos, .cv, .contact{
+	.menu li{
 	        flex:1;
 	        height: 3em;
 	}
@@ -84,7 +72,6 @@
 			  grid-template-columns: 0.1fr 1.5fr 4fr 0.1fr;
 			  grid-template-rows: repeat (6,1fr);
 			  grid-gap: 1em
-
 	}
 
 	.aboutme {
@@ -95,37 +82,38 @@
 	}
 	.boxcontent4 {
  			grid-column: 3/4;
-	        grid-row:: 1/2;
+	        grid-row: 1/2;
 			background-color: #d4b562;
 			border-radius: 5px
+	}
 
-	}
-	.boxcontent4{
-		text-align: center;
-	}
 	.boxcontent5 {
  			grid-column: 3/4;
-	        grid-row:: 2/3;
+	        grid-row: 2/3;
 			background-color: #d4b562;
 			border-radius: 5px
-
-	}
-	.boxcontent5{
-		text-align: center;
 	}
 .boxcontent6 {
  			grid-column: 3/4;
-	        grid-row:: 3/4;
+	        grid-row: 3/4;
 			background-color: #d4b562;
 			border-radius: 5px
-
-	}
-	.boxcontent6{
-		text-align: center;
 	}
 
 /* ------------------ A PROPOS -----------*/
 
-#aboutme, .name, .domain, .skills, .hobbies, li{
-	text-align: center;
-	}
+ul,.domain {
+	padding: 1rem;
+}
+
+.profil {
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.profil img {
+	height: 120px;
+	width: 120px;
+}
+
