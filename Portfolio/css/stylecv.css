@@ -15,89 +15,88 @@ p {
 }
 
 header, footer{
-		background-color:#d4b562; /*Couleur de fond*/
-		text-align:center;/*texte centré*/
+	background-color:#d4b562; /*Couleur de fond*/
+	text-align:center;/*texte centré*/
 	}
 
-	body{
-		font-family: 'Calistoga', cursive;
-	  background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
-	  color: black;
+body{
+	font-family: 'Calistoga', cursive;
+	background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
+	color: black;
 	}
 
-	li{
+li{
 	list-style: none;
 }
 
-	main{
-		margin : 50px 0px;
-		text-align: center;
+main{
+	margin : 2rem 0;
+	text-align: center;
 	}
 
-	footer{
+footer{
 	padding:20px;/*Marge verticale*/
 }
 	/*----------------------------FLEX------------------------------------*/
 
-	.menu{
-		display: flex;
-		justify-content: center;
-	  	text-align: center;
-	        list-style: none; 
-	        padding: 0; 
-			margin: 0;
-			background-color: #d4b562;
+.menu{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+	background-color: #d4b562;
 	}
 
-	a { 
-	        color: black; 
-	        font-size: 1em;
-	        text-decoration: none; 
+a { 
+	color: black; 
+	font-size: 1em;
+	text-decoration: none; 
 	}
 
-	.menu{
-	        display:flex;
-	        align-items:center;
-	        justify-content : center;
-	        height:6em;
+.menu{
+	display:flex;
+	align-items:center;
+	justify-content : center;
 	}
 
-	.menu li{
-	        flex:1;
-	        height: 3em;
+.menu li{
+	flex:1;
+	height: 3em;
 	}
 /*-------------------- GRID CV-------------------- */
 .wrapper{
-			  display: grid;
-			  grid-template-columns: 0.1fr 1.5fr 4fr 0.1fr;
-			  grid-template-rows: repeat (6,1fr);
-			  grid-gap: 1em
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr 5fr 0.5fr;
+	grid-template-rows: repeat (6,1fr);
+	grid-gap: 1em
 	}
 
-	.aboutme {
-		grid-column: 2/3;
-		grid-row: 1/4;
-		background-color: #d4b562;
-		border-radius: 5px
+.aboutme {
+	grid-column: 2/3;
+	grid-row: 1/4;
+	background-color: #d4b562;
+	border-radius: 5px
 	}
-	.boxcontent4 {
- 			grid-column: 3/4;
-	        grid-row: 1/2;
-			background-color: #d4b562;
-			border-radius: 5px
+.boxcontent4 {
+ 	grid-column: 3/4;
+	grid-row: 1/2;
+	background-color: #d4b562;
+	border-radius: 5px
 	}
 
-	.boxcontent5 {
- 			grid-column: 3/4;
-	        grid-row: 2/3;
-			background-color: #d4b562;
-			border-radius: 5px
+.boxcontent5 {
+ 	grid-column: 3/4;
+	grid-row: 2/3;
+	background-color: #d4b562;
+	border-radius: 5px
 	}
 .boxcontent6 {
- 			grid-column: 3/4;
-	        grid-row: 3/4;
-			background-color: #d4b562;
-			border-radius: 5px
+ 	grid-column: 3/4;
+	grid-row: 3/4;
+	background-color: #d4b562;
+	border-radius: 5px
 	}
 
 /* ------------------ A PROPOS -----------*/

@@ -1,26 +1,27 @@
-	/*----------------------------------------------------CSS Classique------------------------------------------------*/
-	@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-	html, body, p{
-		margin:0;
-		padding:0;
+/*----------------------------------------------------CSS Classique------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
 	}
 
-	header, footer{
-		background-color:#d4b562; /*Couleur de fond*/
-		text-align:center;/*texte centré*/
+header, footer{
+	background-color:#d4b562; /*Couleur de fond*/
+	text-align:center;/*texte centré*/
 	}
 
-	body{
-		font-family: 'Calistoga', cursive;
-	  background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
-	  color: black;
+body{
+	font-family: 'Calistoga', cursive;
+	background-image: url(http://getwallpapers.com/wallpaper/full/8/5/0/1394178-amazing-black-and-gold-background-1920x1080.jpg);
+	color: black;
 	}
 
-	main{
-		margin : 50px;
+main{
+	margin : 2rem 0;
 	}
 
-	.centercolumn, .lien{
+.centercolumn, .lien{
 	width:930px;/*Taille de la colonne centrée moins le padding*/
 	background-color:#d4b562;/*Couleur de fond*/
 	margin: auto; /*centrer la colonne*/
@@ -37,101 +38,82 @@ h1,h2,h3, .lien{
 }
 
 footer{
-	padding:20px 20px;/*Marge verticale*/
+	padding:20px;/*Marge verticale*/
 }
 
-	/*----------------------------FLEX------------------------------------*/
+/*----------------------------FLEX------------------------------------*/
 
-	.menu{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	  	text-align: center;
-	        list-style: none; 
-	        padding: 0; 
-	        margin: 0;  
-	}
-	.experiencespro { 
-	        background-color: #d4b562;
+.menu{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+	background-color: #d4b562;  
 	}
 
-	.experiencesperso { 
-	        background-color: #d4b562;
+a{ 
+	color: black; 
+	font-size: 1em;
+	text-decoration: none; 
 	}
 
-	.formations { 
-	        background-color: #d4b562;
-	}
-	.apropos {
-			background-color: #d4b562;
-	}
-
-	.cv {
-			background-color: #d4b562;
+.menu{
+	display:flex;
+	align-items:center;
+	justify-content : center;
 	}
 
-	.contact{
-			background-color: #d4b562;
+.menu, li{
+	flex:1;
+	height: 3em;
 	}
 
-	a { 
-	        color: black; 
-	        font-size: 1em;
-	        text-decoration: none; 
+/*------------------------------------------GRID CV-------------------------------------*/
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: repeat (6,1fr);
+	grid-gap: 1em
+	border-radius:5px;
 	}
 
-	.menu{
-	        display:flex;
-	        align-items:center;
-	        justify-content : center;
-	        height:6em;
+.aboutme{
+	grid-column: 1/2;
+	grid-row: 1/4;
+	background-color: #d4b562;
 	}
 
-	.menu, .experiencespro, .experiencesperso, .formations, .apropos, .cv, .contact{
-	        flex:1;
-	        height: 3em;
-	}
-
-	/*------------------------------------------GRID CV-------------------------------------*/
-	.wrapper{
-			  display: grid;
-			  grid-template-columns: 1fr 2fr 1fr;
-			  grid-template-rows: repeat (6,1fr);
-			  grid-gap: 1em
-			  border-radius:5px;
+.boxcontent4{
+ 	grid-column: 2/3;
+	grid-row:: 1/2;
+	background-color: #d4b562;
 
 	}
-	.aboutme {
-		grid-column: 1/2;
-		grid-row: 1/4;
-		background-color: #d4b562;
-	}
-	.boxcontent4 {
- 			grid-column: 2/3;
-	        grid-row:: 1/2;
-			background-color: #d4b562;
 
+.boxcontent4{
+	text-align: center;
 	}
-	.boxcontent4{
-		text-align: center;
-	}
-	.boxcontent5 {
- 			grid-column: 2/3;
-	        grid-row:: 2/3;
-			background-color: #d4b562;
 
+.boxcontent5{
+ 	grid-column: 2/3;
+	grid-row:: 2/3;
+	background-color: #d4b562;
 	}
-	.boxcontent5{
-		text-align: center;
-	}
-.boxcontent6 {
- 			grid-column: 2/3;
-	        grid-row:: 3/4;
-			background-color: #d4b562;
 
+.boxcontent5{
+	text-align: center;
 	}
-	.boxcontent6{
-		text-align: center;
+
+.boxcontent6{
+ 	grid-column: 2/3;
+	grid-row:: 3/4;
+	background-color: #d4b562;
+	}
+
+.boxcontent6{
+text-align: center;
 	}
 
 
