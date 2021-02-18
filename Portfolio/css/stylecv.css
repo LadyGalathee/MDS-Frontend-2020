@@ -37,7 +37,8 @@ main{
 footer{
 	padding:20px;/*Marge verticale*/
 }
-	/*----------------------------FLEX------------------------------------*/
+
+/*----------------------------FLEX------------------------------------*/
 
 .menu{
 	display: flex;
@@ -65,7 +66,8 @@ a {
 	flex:1;
 	height: 3em;
 	}
-/*-------------------- GRID CV-------------------- */
+
+/*--------------------GRID CV-------------------- */
 .wrapper{
 	display: grid;
 	grid-template-columns: 0.5fr 1.5fr 5fr 0.5fr;
@@ -92,6 +94,7 @@ a {
 	background-color: #d4b562;
 	border-radius: 5px
 	}
+	
 .boxcontent6 {
  	grid-column: 3/4;
 	grid-row: 3/4;
@@ -99,7 +102,7 @@ a {
 	border-radius: 5px
 	}
 
-/* ------------------ A PROPOS -----------*/
+/* ------------------A PROPOS-----------------*/
 
 ul,.domain {
 	padding: 1rem;
